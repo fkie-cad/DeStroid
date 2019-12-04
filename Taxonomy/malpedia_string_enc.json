@@ -1,0 +1,2390 @@
+[
+{
+"family": "apk.adultswine",
+"alt_names": "",
+"sample_hashes": [
+    "3d3e8e48db16546f7c4d1195cd87c1c705f16e9208c5a91a36a9df8686e6bcd5"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+    "is": true,
+    "type": [
+        "DD.static method"
+    ],
+    "deobfuscations": [
+    	26
+    	],
+    "total deobfuscations": 26,
+    "deobfuscation routine": [
+        "Lcom/google/android/gms/internal/zzal;->zzb([BLjava/lang/String;)Ljava/lang/String;"
+    ]
+    }
+},
+{
+"family": "apk.androrat",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+    "total deobfuscations": 0,
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.anubis",
+"alt_names": "apk.bankbot",
+"sample_hashes": [
+    "2dfde3d394b7eaf3a45693dc95f9c5540c9fd2b3bc7e89e9ebc9d12963c00bee"
+],
+"notes": "sample 64ebe9b975de022b888f17db429af3a93d3db95db5af274e3eefd3ca7f24e350 contains only a base64 encoded html string in Lcom/saver/batterymobi/lkj/a/c; and sample 7f6799d4fc35759485ee5346ae767e4f9ed6432f053071a760810486f1e73a80 contain no encrypted string",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string (2)",
+		"DD.encrypted string (2)",
+		"DD.encrypted string (4)"
+	],
+	"deobfuscations": [
+ "2dfde3d394b7eaf3a45693dc95f9c5540c9fd2b3bc7e89e9ebc9d12963c00bee bankbot_sample1.apk (426)",
+ "aeaccdc3fb0ddb674770ff87007b4454b0a8d706ebd57ee7e75599ca7bda19d8  bankbot_sample2.apk (454)",
+ "16cb502391b003ec9c8a4fc604f7939d8f9224eecb6d0f8a801f72069508943e bankbot_sample3.apk (98)"
+],
+	"deobfuscation routine": [
+		"bankbot_sample1|Lturs/rickertsit/a;->a(Ljava/lang/String;)Ljava/lang/String;",
+		"bankbot_sample1|Lturs/rickertsit/b;->a(Ljava/lang/String;)Ljava/lang/String;",
+		"bankbot_sample2|Lcom/google/android/gms/common/zzc$zza;->zzcm(Ljava/lang/String;)[B",
+		"bankbot_sample2|Lcom/google/android/gms/internal/zzal;->zzb([BLjava/lang/String;)Ljava/lang/String;",
+		"bankbot_sample3|Lorg/support/q;->M(Ljava.lang.Object;)Ljava.lang.String;",
+		"bankbot_sample3|Lcom/google/android/gms/common/zzh;->zzgf(Ljava.lang.String)B[",
+		"bankbot_sample3|Lcom/wierdhammer/expenses/s;->d(Ljava.lang.Object;)Ljava.lang.String",
+		"bankbot_sample3|Lcom/wierdhammer/expenses/h;->d(Ljava.lang.Object;)Ljava.lang.String"
+	]
+	}
+},
+{
+"family": "apk.anubisspy",
+"alt_names": "",
+"sample_hashes": [
+    "0cab88bb37fee06cf354d257ec5f27b0714e914b8199c03ae87987f6fa807efc",
+    "06cb3f69ba0dd3a2a7fa21cdc1d8b36b36c2a32187013598d3d51cfddc829f49",
+    "ad5babecf3a21dd51eee455031ab96f326a9dd43a456ce6e8b351d7c4347330f"
+],
+"notes": "no string encrpytion in sample 0cab88bb37fee06cf354d257ec5f27b0714e914b8199c03ae87987f6fa807efc; error with aes deob method",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.static method",
+		"DD.static method"
+	],
+	"deobfuscations": [
+ "06cb3f69ba0dd3a2a7fa21cdc1d8b36b36c2a32187013598d3d51cfddc829f49 (18)",
+ "ad5babecf3a21dd51eee455031ab96f326a9dd43a456ce6e8b351d7c4347330f (18)"
+],
+	"deobfuscation routine": [
+		"The methods in Lcom/google/android/gms/internal/q; with the decryption routine at Lcom/google/android/gms/internal/b([BLjava/lang/String;)Ljava/lang/String;",
+		"Lcom/google/android/gms/internal/i;->b([BLjava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.asacub",
+"alt_names": "",
+"sample_hashes": [
+    "158c7688877853ffedb572ccaa8aa9eff47fa379338151f486e46d8983ce1b67",
+"31edacd064debdae892ab0bc788091c58a03808997e11b6c46a6a5de493ed25d",
+"38dcec47e2f4471b032a8872ca695044ddf0c61b9e8d37274147158f689d65b9",
+"d791e0ce494104e2ae0092bb4adc398ce740fef28fa2280840ae7f61d4734514"
+],
+"notes": "some samples use string encryption and some not",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>"
+	],
+	"deobfuscations": [
+ "158c7688877853ffedb572ccaa8aa9eff47fa379338151f486e46d8983ce1b67 (11)"
+],
+	"deobfuscation routine": [
+		"Lcom/recover/scan/b;-><clinit> with deobfuscation method in Lcom/recover/scan/c;->a(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.badcall",
+"alt_names": "",
+"sample_hashes": [
+    "edd2aff8fad0c76021adc74fe3cb3cb1a02913a839ad0f2cf31fdea8b5aa8195_unpacked"
+],
+"notes": "belongs also to the lazarus group/family",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+    "is": false,
+    "type": [
+        "no"
+    ],
+    "deobfuscations": [
+       0
+    ],
+    "deobfuscation routine": [
+        "none"
+    ]
+    }
+},
+{
+"family": "apk.bahamut",
+"alt_names": "",
+"sample_hashes": [
+    "05a4e1e6542d6b0ba7b6eced12c05e96a341deaf88adb28695365544940da5ed",
+    "090bc0f5936a12771b7fdf15070ba2169a24108a095e939920498b94ce19596d",
+    "d7fb80c71fc6d50ce44036a3116c3ae7e1b5800fca45f2876854ed7f5220d45c"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+		"05a4e1e6542d6b0ba7b6eced12c05e96a341deaf88adb28695365544940da5ed (6)",
+        "090bc0f5936a12771b7fdf15070ba2169a24108a095e939920498b94ce19596d (6)",
+        "d7fb80c71fc6d50ce44036a3116c3ae7e1b5800fca45f2876854ed7f5220d45c (6)"
+		],
+	"deobfuscation routine": [
+		"Lcom/weather/kashmir/services/WeatherUe;->qd(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+        "Lcom/weather/kashmir/services/WeatherUe;->qd(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+        "Lorg/translator/chinese/apidata/CheckNetwork;->qd(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.bianlian",
+"alt_names": "",
+"sample_hashes": [
+    "4cc68830a108b03171c01e0b0f42d5257982c51f3e39bbe7a3b712a7e4baa256",
+    "ac32dc236fea345d135bf1ff973900482cdfce489054760601170ef7feec458f"
+],
+"notes": "this is probably a new type, because the decryption is done inside the method",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.static method new"
+	],
+	"deobfuscations": [
+ "ac32dc236fea345d135bf1ff973900482cdfce489054760601170ef7feec458f (421)"
+],
+	"deobfuscation routine": [
+		"All classes returning a string and are from type static which are xoring two byte arrays"
+	]
+	}
+},
+{
+"family": "apk.brata",
+"alt_names": "",
+"sample_hashes": [
+    "5395936963df4d72b365fd30ab52a00a88f8a5f75336ba84ac8a9fc369e0f811",
+    "b64123e4ff92cd7be104b21ca0deaefd89e8270572746c61efc3e7cd05999b5d"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+    "is": true,
+    "type": [
+        "DD.encrypted string",
+        "SE.decoding",
+        "DD.encrypted string",
+        "SE.decoding"
+    ],
+    "deobfuscations": [
+       "5395936963df4d72b365fd30ab52a00a88f8a5f75336ba84ac8a9fc369e0f811 (1)",
+       "5395936963df4d72b365fd30ab52a00a88f8a5f75336ba84ac8a9fc369e0f811 (11)",
+       "b64123e4ff92cd7be104b21ca0deaefd89e8270572746c61efc3e7cd05999b5d (1)",
+       "b64123e4ff92cd7be104b21ca0deaefd89e8270572746c61efc3e7cd05999b5d (11)"
+    ],
+    "deobfuscation routine": [
+        "La/b;->a([B[B)Ljava/lang/String;",
+        "Lcom/vera/i;->a(Ljava/lang/String;)Ljava/lang/String;",
+        "La/b;->a([B[B)Ljava/lang/String;",
+        "Lcom/hidev/i;->a(Ljava/lang/String;)Ljava/lang/String; "
+    ]
+    }
+},
+{
+"family": "apk.busygasper",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.catelites",
+"sample_hashes": [
+    "d8452b39b1962239e9dbe12e8a9d8d0ee098b9c8de8a8d55b5a95b67b552102f",
+    "53dc796e2e77689b115701a92ad2bdaeb0c7a4e87bc9e9a0bbeda057b77e22ee",
+    "0e741a21228f4f7ffdbb891524f3a246b60bee287965a74fe15009127f6de280",
+    "5519c08852d2678ce16575ab6a47d4e0d4cb314f69603648d241171a670d6cc0"
+],
+"alt_names": "",
+"notes": "multi samples (noch die location the clinit festhalten)",
+"state": "pending",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>",
+        "SR.<clinit>",
+        "SR.<clinit>",
+        "SR.<clinit>"
+	],
+	"deobfuscations": [
+		"d8452b39b1962239e9dbe12e8a9d8d0ee098b9c8de8a8d55b5a95b67b552102f catelites 2017-12-15.apk (71)",
+		"53dc796e2e77689b115701a92ad2bdaeb0c7a4e87bc9e9a0bbeda057b77e22ee catelites 2017-12-17.apk (71)",
+		"0e741a21228f4f7ffdbb891524f3a246b60bee287965a74fe15009127f6de280 catelites 2017-12-21.apk (70)",
+		"5519c08852d2678ce16575ab6a47d4e0d4cb314f69603648d241171a670d6cc0 catelites 2018 01 19.apk (66)"
+	],
+	"deobfuscation routine": [
+		"none",
+		"none",
+		"none",
+		"none"
+	]
+	}
+},
+{
+"family": "apk.cerberus",
+"alt_names": "",
+"sample_hashes": [
+    "ffa5ac3460998e7b9856fc136ebcd112196c3abf24816ccab1fbae11eae4954"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 73
+],
+	"deobfuscation routine": [
+		"Lcom/iuolnsaork/itfets/FECTkBViqd;->hKAkCZgIPvnL([B)[B"
+	]
+	}
+},
+{
+"family": "apk.chamois",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "at least not in its first stage",
+"state": "family",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [ 
+		0
+	],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.charger",
+"alt_names": "",
+"sample_hashes": [
+    "58eb6c368e129b17559bdeacb3aed4d9a5d3596f774cf5ed3fdcf51775232ba0"
+],
+"notes": "ggfs. sind es auch mehr..hier mal manuell alles machen..",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 44
+],
+	"deobfuscation routine": [
+		"Lcom/mtilpges/oeveohr/a;->a([B)[B"
+	]
+	}
+},
+{
+"family": "apk.chrysaor",
+"alt_names": "",
+"sample_hashes": [
+    "3474625e63d0893fc8f83034e835472d95195254e1e4bdf99153b7c74eb44d86",
+    "ade8bef0ac29fa363fc9afd958af0074478aef650adeb0318517b48bd996d5d5"
+],
+"notes": "3474625e63d0893fc8f83034e835472d95195254e1e4bdf99153b7c74eb44d86 doesn't contain any encrypted strings",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>"
+	],
+	"deobfuscations": [
+"5"
+],
+	"deobfuscation routine": [
+		"sample2:Lcom/network/i/a;->a([BI)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.clientor",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": false,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.clipper",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+]
+,"notes": "",
+"state": "finished",
+"analyzed": false,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.comet_bot",
+"alt_names": "",
+"sample_hashes": [
+    "642da73bc4c78004304dfed2e6e704ebb352ff9f1db19a19cc2296c86164e723"
+],
+"notes": "",
+"state": "finished",
+"analyzed": false,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.string encryption",
+        "DD.string encryption",
+        "DD.string encryption"
+	],
+	"deobfuscations": [
+    3,
+ 57,
+ 84,
+ 354
+],
+	"deobfuscation routine": [
+        "Lanu_bispro/app/a;->a(Ljava/lang/String;)Ljava/lang/String;",
+        "Lanu_bispro/app/d;->a(Ljava/lang/String;)Ljava/lang/String;",
+        "Lanu_bispro/app/b;->a(Ljava/lang/String;)Ljava/lang/String;",
+		"Lanu_bispro/app/c;->a(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.connic",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.cpuminer",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.doublelocker",
+"alt_names": "",
+"sample_hashes": [
+    "79e602a062d05fbb1409afc16e6d41ac0645576b2b5c1899dc93e6852c30a71f"
+],
+"notes": "All classes inside owd/qusutsqfdo/mbpepvxhxly with strings hold encrypted strings; because the decryption works always the same, their is no correlation between <clinit> and its encrypted strings",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>"
+	],
+	"deobfuscations": [
+ 586
+],
+	"deobfuscation routine": [
+		"owd/qusutsqfdo/mbpepvxhxly/lIllIIIllLlllIIIllIIlllLIlllIllIllIllLllIIILllIllllllIII;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/r;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/IlllllllllIIIIlIllLlllIlLlllIIIlllLIllIIIlIIIlllIlILlllI;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/lLllIIllllIlllIlIIlILIIlIlLlIIllLlllllIIIllIlllllllIIlII;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/t;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/C;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/e;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/s;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/llILllllllIlIlllIIlllILlIIIIILIllllIlIllllllIIILIIlIllll;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/a;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/IlllIIlllLllIllIIlllIllIlllIIIllIlIlILlLIllllIlIIIlLlIll;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/l;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/p;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/lIIllLllIlIILIIIlllllllIIllIlIIlllllIlIlIlIlllLlLllIllII;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/z;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/m;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/IllIlLIIlllLllIIlIIlllIlIllIIllllILllllIlllllllIILlIIlII;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/k;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/ag;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/v;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/f;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/c;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/w;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/af;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/IlllIllIlIIlllllIlllllIIllIllIIIIllIlllllLllllLIILLIIIIl;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/q;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/llllllIlIlLLIIlILIIIIlllllIllIIIllIIllIlIlllllLllllIIlIl;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/n;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/LlIIllllllLlllIlLIlllIllLlIllIlllIIlIIlIlIllIIIIlIIlIlll;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/lIllllllllIILIIIllLLIIIllIIllILIllllIlllIIIllIllllIIllll;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/D;-><clinit>",
+"owd/qusutsqfdo/mbpepvxhxly/j;-><clinit>"
+	]
+	}
+},
+{
+"family": "apk.dualtoy",
+"alt_names": "",
+"sample_hashes": [
+    "7f7a3ed87c63bd46eb8b91a5bb36b399b4eebaf7d01342c13ef695340b9964a"
+],
+"notes": "inside the class ./baidu/kirin/d/a;-><clinit> is the preperation for decrypting received encrypted JSON packages",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted strings"
+	],
+	"deobfuscations": [
+ 5
+],
+	"deobfuscation routine": [
+		"Lcom/mgr/micorsoft/e/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.dvmap",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+    "deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.exobot",
+"alt_names": "",
+"sample_hashes": [
+    "3d3aa166f7b86379e970a7e583d1a6b22ea9f3217a516fe65345d23055f13723",
+    "89a9b0bef253cf90b6485273282bd0e8a584510a9624b10d14f5c1037d2d87be",
+    "b395c4cd6f54e58d125da269cebb91e197f48f6c78f2179c223431b3f172d8a4"
+],
+"notes": "SE == String Encoding for instance base64 or stuff like string replacement",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+        "DD.encrypted string",
+		"SE.replacement",
+        "DD.encrypted string",
+        "SE.replacement",
+        "DD.encrypted string",
+        "SE.replacement"
+	],
+	"deobfuscations": [
+    "3d3aa166f7b86379e970a7e583d1a6b22ea9f3217a516fe65345d23055f13723 (4)",
+    "3d3aa166f7b86379e970a7e583d1a6b22ea9f3217a516fe65345d23055f13723 (377)",
+    "89a9b0bef253cf90b6485273282bd0e8a584510a9624b10d14f5c1037d2d87be (4)",
+    "89a9b0bef253cf90b6485273282bd0e8a584510a9624b10d14f5c1037d2d87be (370)",
+    "b395c4cd6f54e58d125da269cebb91e197f48f6c78f2179c223431b3f172d8a4 (4)",
+    "b395c4cd6f54e58d125da269cebb91e197f48f6c78f2179c223431b3f172d8a4 (370)"
+],
+	"deobfuscation routine": [
+        "Ljgggzw/tqeznaqfirivqdfbecqe/q;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+		"Ljgggzw/tqeznaqfirivqdfbecqe/n;->a(Ljava/lang/String;)Ljava/lang/String;",
+        "Lvcojqbfbvmvwe/jdnmjqllm/q;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+        "Lvcojqbfbvmvwe/jdnmjqllm/n;->a(Ljava/lang/String;)Ljava/lang/String;",
+        "Ljkbsomcasmserp/djqfeywejazezc/q;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+        "Ljkbsomcasmserp/djqfeywejazezc/n;->a(Ljava/lang/String;)Ljava/lang/String;"        
+	]
+	}
+},
+{
+"family": "apk.exodus",
+"alt_names": "",
+"sample_hashes": [
+    "stage1_0f5f1409b1ebbee4aa837d20479732e11399d37f05b47b5359dc53a4001314e5",
+    "stage1_e0acbb0d7e55fb67e550a6bf5cf5c499a9960eaf5f037b785f9004585202593b",
+    "stage1_4f6146956b50ae3a6e80a1c1f771dba848ba677064eb0e166df5804ac2766898",
+    "stage2_a42a05bf9b412cd84ea92b166d790e8e72f1d01764f93b05ace62237fbabe40e_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+        "DD.encrypted string",
+        "DD.encrypted string"
+	],
+	"deobfuscations": [
+    "stage1_0f5f1409b1ebbee4aa837d20479732e11399d37f05b47b5359dc53a4001314e5 (5)",
+ "stage1_e0acbb0d7e55fb67e550a6bf5cf5c499a9960eaf5f037b785f9004585202593b (5)",
+ "stage1_4f6146956b50ae3a6e80a1c1f771dba848ba677064eb0e166df5804ac2766898 (6)"
+],
+	"deobfuscation routine": [
+        "Llib/operatore/core/h;->a(Ljava/lang/String;)Ljava/lang/String;",
+		"Llib/operatore/core/h;->a(Ljava/lang/String;)Ljava/lang/String;",
+        "Llib/operatore/core/i;->a(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.fakespy",
+"alt_names": "",
+"sample_hashes": [
+ "ba5b85a4dd70b96f4a43bda5eb66e546facc4e3523f78a91fc01c768c6de5c24"
+ ],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.faketgram",
+"alt_names": "",
+"sample_hashes": [
+ "a7609b6316b325cc8f98b186d46366e6eefaae101ee6ff660ecc6b9e90146a86"
+ ],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.filecoder",
+"alt_names": "",
+"sample_hashes": [
+ "a7609b6316b325cc8f98b186d46366e6eefaae101ee6ff660ecc6b9e90146a86"
+ ],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.finfisher",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.flexispy",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"NL.native to bytecode",
+		"SR.<clinit>",
+		"DD.string encryption"
+	],
+	"deobfuscations": [
+	87,
+	26,
+	38
+
+],
+	"deobfuscation routine": [
+		"every native method which gets invoked through the JNI and returning a String",
+		"Lcom/vvt/base/a/a;-><clinit>()V and one of each classes inside org.eclipse.paho.client.mqttv3.a.a",
+		"Lcom/vvt/l/d;->a(Ljava/security/Key;[B)[B and Lcom/vvt/l/a;->b(Ljavax/crypto/SecretKey;[B)[B and Lcom/vvt/l/d;->a(Ljava/security/interfaces/RSAPublicKey;[B)[B and Lcom/vvt/l/a;->d()Ljava.lang.String and Lcom/vvt/af/b;->g(Ljava/lang/String;)Ljava/lang/String; (base64 decoding)"
+	]
+	}
+},
+{
+"family": "apk.flexnet",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.string encryption"
+	],
+	"deobfuscations": [
+ 58
+],
+	"deobfuscation routine": [
+		"Lcom/lpklmlnr/rplimetr/hlxncn;->wkgnwgwo([B)[B"
+	]
+	}
+},
+{
+"family": "apk.funkybot",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.ghostctrl",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "this family should used string encryption in its downloaded payload but we only analyzed the dropper",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.glancelove",
+"alt_names": "",
+"sample_hashes": [
+    "166f3a863bb2b66bda9c76dccf9529d5237f6394721f46635b053870eb2fcc5a"
+],
+"notes": "not really encrypted, but still some sort of pseudo encoding",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>/SE.misc"
+	],
+	"deobfuscations": [
+ 118
+],
+	"deobfuscation routine": [
+        "All strings with an <clinit> method inside the package Lanew/football/cup/world/com/worldcup/ and strings using this method to decode/decrypt Lanew/football/cup/world/com/worldcup/dwr/utils/Utils;->getName([Lanew/football/cup/world/com/worldcup/dwr/utils/Letter;)Ljava/lang/String;"
+		
+	]
+	}
+},
+{
+"family": "apk.goldenrat",
+"alt_names": "",
+"sample_hashes": [
+    "6fc331db945f090168ef288ae3c80ef8890b3dcb198b51e1af9313e1e803e021"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SE.replacement",
+        "SE.replacement"
+	],
+	"deobfuscations": [
+ 18,
+ 2
+],
+	"deobfuscation routine": [
+		"Lcom/sevandbatch/novsev__WPSM_KGWP_ttnplusfix__AllGuysOfficeUg__ami/hzma/PcketPrvidr;->HashNames(Ljava/lang/String;)Ljava/lang/String;",
+        "Lcom/sevandbatch/novsev__WPSM_KGWP_ttnplusfix__AllGuysOfficeUg__ami/hzma/PcketPrvidr;->get_ipraw()Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.gplayed",
+"alt_names": "",
+"sample_hashes": [
+    "a342a16082ea53d101f556b50532651cd3e3fdc7d9e0be3aa136680ad9c6a69f"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.gustuff",
+"alt_names": "",
+"sample_hashes": [
+    "3056c2e763aff06c24a41b56986e26c0c62bbf1fe8ad8aab9d1de36d10f87b34_unpacked",
+    "5d27a4cbfb2a08afa4f0105ec257e37508a2e0fa03932037c93524d0898606fb_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+        "DD.encrypted string",
+        "DD.encrypted string"
+	],
+	"deobfuscations": [
+ "3056c2e763aff06c24a41b56986e26c0c62bbf1fe8ad8aab9d1de36d10f87b34_unpacked (72)",
+ "5d27a4cbfb2a08afa4f0105ec257e37508a2e0fa03932037c93524d0898606fb_unpacked (72)",
+ "5d27a4cbfb2a08afa4f0105ec257e37508a2e0fa03932037c93524d0898606fb_unpacked (6)"
+],
+	"deobfuscation routine": [
+		"Lcom/eststia/vninic/ejUElIcx;->NQtMWEBYNCv([B)[B",
+        "Lcom/irensnso/tszcstof/iAnlmWmncWgu;->rktcrnKiPDV([B)[B",
+        "Lcom/irensnso/tszcstof/iAnlmWmncWgu;->bWpleEfqoJFY(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.hardrain",
+"alt_names": "apk.lazarus",
+"sample_hashes": [
+    "06cadaac0710ed1ef262e79c5cf12d8cd463b226d45d0014b2085432cdabb4f3",
+    "153db613853fb42357acb91b393d853e2e5fe98b7af5d44ab25131c04af3b0d6_unpacked",
+    "0ff83f3b509c0ec7070d33dceb43cef4c529338487cd7e4c6efccf2a8fd7142d_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+    "is": false,
+    "type": [
+        "no"
+    ],
+    "deobfuscations": [
+ 0
+],
+    "deobfuscation routine": [
+        "none"
+    ]
+    }
+},
+{
+"family": "apk.hero_rat",
+"alt_names": "",
+"sample_hashes": [
+    "a002fca557e33559db6f1d5133325e372dd5689e44422297406e8337461e1548"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.hiddenad",
+"alt_names": "",
+"sample_hashes": [
+    "1f24b46c4d13497434d756f6d47f0ddfdcdbb006819bcb20beedb56b062d0398"
+],
+"notes": "the string encryption is more an encoding to make the analysis just a little more trickier",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>"
+	],
+	"deobfuscations": [
+ 135
+],
+	"deobfuscation routine": [
+		"Lc/b/a/d;-><clinit>"
+	]
+	}
+},
+{
+"family": "apk.hydra",
+"alt_names": "",
+"notes": "each decryption routine return one decrypted string; no access to the java world",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"native library"
+	],
+	"deobfuscations": [
+ 51
+],
+	"deobfuscation routine": [
+		"sub_15640",
+"sub_17984",
+"sub_11B88",
+"sub_15CB0",
+"sub_1010C",
+"sub_FD10",
+"sub_11694",
+"sub_19998",
+"sub_17E04",
+"sub_12220",
+"sub_13A30",
+"sub_17AA4",
+"sub_11CA8",
+"sub_19584",
+"sub_111AC",
+"sub_19464",
+"sub_FE30",
+"sub_13088",
+"sub_18990",
+"sub_183B8",
+"sub_117B4",
+"sub_12CB8",
+"sub_153C8",
+"sub_109CC",
+"sub_12340",
+"sub_171A8",
+"sub_17BC4",
+"sub_11DC8",
+"sub_F84C",
+"sub_152A8",
+"sub_112CC",
+"sub_15DD0",
+"sub_16F68",
+"sub_118D4",
+"sub_12DD8",
+"sub_17CE4",
+"sub_1345C",
+"sub_12460",
+"sub_13910",
+"sub_140E4",
+"sub_16E48",
+"sub_18870",
+"sub_19AB8",
+"sub_FFEC",
+"sub_15EF0",
+"sub_131A8",
+"sub_196A4",
+"sub_13EF4",
+"sub_17088",
+"sub_18AB0",
+"sub_1357C"
+	]
+	}
+},
+{
+"family": "apk.irrat",
+"alt_names": "",
+"sample_hashes": [
+    "1d0770ac48f8661a5d1595538c60710f886c254205b8cf517e118c94b256137dq"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.jaderat",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.joker",
+"alt_names": "",
+"sample_hashes": [
+    "a7dc4238682147012751bb853001b053527ca8031a624bbd5db1a77a3e563ead",
+    "1e724a5af76927106ee92421412af62698707d1d44a9891f91b3c6902f1780cd"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+    "is": true,
+    "type": [
+        "DD.encrypted string",
+        "DD.encrypted string",
+        "SE.replacement"
+    ],
+    "deobfuscations": [
+       "1e724a5af76927106ee92421412af62698707d1d44a9891f91b3c6902f1780cd (1)",
+       "1e724a5af76927106ee92421412af62698707d1d44a9891f91b3c6902f1780cd (3)",
+       "1e724a5af76927106ee92421412af62698707d1d44a9891f91b3c6902f1780cd (8)"
+    ],
+    "deobfuscation routine": [
+        "Lcom/google/android/gms/internal/ads/zzsy;->zzbi(Ljava/lang/String;)[B",
+        "Lcom/google/android/gms/internal/ads/zzdj;->zza([BLjava/lang/String;)[B",
+        "Lcom/blur/blurphoto/view/e;->a(Ljava/lang/String;)Ljava/lang/String;"
+    ]
+    }
+},
+{
+"family": "apk.kevdroid",
+"alt_names": "",
+"sample_hashes": [
+    "990d278761f87274a427b348f09475f5da4f924aa80023bf8d2320d981fb3209",
+    "c015292aab1d41acd0674c98cd8e91379c1a645c31da24f8d017722d9b942235",
+    "f33aedfe5ebc918f5489e1f8a9fe19b160f112726e7ac2687e429695723bca6a"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.string encryption",
+        "DD.string encryption"
+	],
+	"deobfuscations": [
+ "990d278761f87274a427b348f09475f5da4f924aa80023bf8d2320d981fb3209 (26)",
+ "c015292aab1d41acd0674c98cd8e91379c1a645c31da24f8d017722d9b942235 (26)"
+],
+	"deobfuscation routine": [
+        "Lcom/google/android/gms/internal/zzal;->zzb([BLjava/lang/String;)Ljava/lang/String;",
+		"Lcom/google/android/gms/internal/zzal;->zzb([BLjava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.koler",
+"alt_names": "only in its unpacked form - here we analyzed only the dropper",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.lazarus_elf",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.loki",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.lokibot",
+"alt_names": "",
+"sample_hashes": [
+    "1979d60ba17434d7b4b5403c7fd005d303831b1a584ea2bed89cfec0b45bd5c2"
+],
+"notes": "525 encrypted strings in total",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+        "DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 42,
+47,
+49,
+13,
+116,
+72,
+120,
+52,
+7,
+7
+],
+	"deobfuscation routine": [
+		"Lfsdfsdf/gsdsfsf/gjhghjg/lbljhkjblkjblkjblkj/accommodateasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lfsdfsdf/gsdsfsf/gjhghjg/lbljhkjblkjblkjblkj/accommodationasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lfsdfsdf/gsdsfsf/gjhghjg/lbljhkjblkjblkjblkj/accompanyingasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lfsdfsdf/gsdsfsf/gjhghjg/lbljhkjblkjblkjblkj/accompanyasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lcompse/refact/st/upsss/Socks/abstractasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lcompse/refact/st/upsss/absorptionasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lcompse/refact/st/upsss/Socks/absorbedasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lcompse/refact/st/upsss/accentasfasfasfasfafa;->absorbasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lcompse/refact/st/upsss/absorptionasfasfasfasfafa;->absorbedasfasfasfasfafa(Ljava/lang/String;)Ljava/lang/String;",
+"Lcom/jcraft/jsch/Util;->absorbasfasfasfasfafa(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.luckycat",
+"alt_names": "",
+"sample_hashes": [
+    "9498ddbfe296e98376187be67b768f3ba053a7cbdffeeda61e28c40bd21365f0",
+    "74e79c89a63d030ad0c0f545e79ac8f4b7910387d0d294ff9fdca91c486efcf8_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.marcher",
+"alt_names": "",
+"notes": "it is not a real encryption it is more like a string replacement",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>",
+		"DD.encrypted string (only in marcher_2017-07-26.apk)"
+	],
+	"deobfuscations": [
+ "marcher_2016-10-19.apk (145)",
+"marcher_2016-12-01.apk (154)",
+"marcher_2017-01-29.apk (221)",
+"marcher_2017-07-26.apk (367)"
+],
+	"deobfuscation routine": [
+		"Lcom/ingbvupdd/a/a;-><clinit> and Lcom/ingbvupdd/a/b;-><clinit>",
+		"Lmor/yehoeiphksbxbwfigcopschkhfxpkj/a/a;-><clinit> and Lmor/yehoeiphksbxbwfigcopschkhfxpkj/a/b;-><clinit>",
+		"Lzwhp/nbneaijecxwskcxtlkvmnqkryxgdgq/a/a;-><clinit> and Lzwhp/nbneaijecxwskcxtlkvmnqkryxgdgq/a/b;-><clinit>",
+		"Lduzpb/jlbrmz/n;-><clinit> and Lduzpb/jlbrmz/q;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.mazarbot",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+		"DD.encrypted string",
+		"DD.encrypted string",
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+"mazarbot_2017-01-01.apk (44)",
+"mazarbot_2017-08-20.apk (58)",
+"mazarbot_2017-10-11.apk (58)",
+"mazarbot_2017-11-07.apk (65)"
+],
+	"deobfuscation routine": [
+		"Lcom/teasnir/lvnger/b;->a([B)[B",
+		"Lcom/avnudl/raetwe/ytjzvk;->kydezym([B)[B",
+		"Lcom/dneiedt/pimcrtea/olnbpm;->ecjzn([B)[B",
+		"Lcom/raodin/inenvl/fxkpy;->znzrjrl([B)[B"
+	]
+	}
+},
+{
+"family": "apk.monokle",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+		"DD.encrypted string",
+		"SR.<clinit>",
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 4,
+ 18,
+ 23,
+ 3
+],
+	"deobfuscation routine": [
+		"Lcom/millennialmedia/android/z;->a(Ljava/lang/String;)[B",
+		"Lcom/google/android/gms/internal/lt;->a([BLjava/lang/String;)Ljava/lang/String;",
+		"Lcom/google/android/gms/common/l;-><clinit>",
+		"Lcom/google/android/gms/internal/mk;->a([BLjava/lang/String;)[B"
+	]
+	}
+},
+{
+"family": "apk.mudwater",
+"alt_names": "",
+"sample_hashes": [
+    "6b4d271a48d118843aee3dee4481fa2930732ed7075db3241a8991418f00d92b"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.mysterybot",
+"alt_names": "",
+"sample_hashes": [
+    "334f1efd0b347d54a418d1724d51f8451b7d0bebbd05f648383d05c00726a7ae"
+],
+"notes": "they are using the demo version of Allatori; the total encrypted strings are 304",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string",
+"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 52,
+39,
+43,
+64,
+106
+],
+	"deobfuscation routine": [
+		"Linstall/apps/P;->ALLATORIxDEMO(Ljava/lang/String;)Ljava/lang/String;",
+"Linstall/apps/Socks/H;->ALLATORIxDEMO(Ljava/lang/String;)Ljava/lang/String;",
+"Linstall/apps/Socks/l;->ALLATORIxDEMO(Ljava/lang/String;)Ljava/lang/String;",
+"Linstall/apps/l;->ALLATORIxDEMO(Ljava/lang/String;)Ljava/lang/String;",
+"Linstall/apps/L;->ALLATORIxDEMO(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.omnirat",
+"alt_names": "",
+"sample_hashes": [
+    ""
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.podec",
+"alt_names": "",
+"sample_hashes": [
+    "334f1efd0b347d54a418d1724d51f8451b7d0bebbd05f648383d05c00726a7ae"
+],
+"notes": "418 encrypted string in total",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+        "DD.encrypted string"
+	],
+	"deobfuscations": [
+ 26,
+ 392
+],
+	"deobfuscation routine": [
+		"Lcom/google/android/gms/internal/zzal;->zzb([BLjava/lang/String;)Ljava/lang/String;",
+        "Lcom/google/android/gms/common/zzc$zza;->zzbX(Ljava/lang/String;)[B"
+	]
+	}
+},
+{
+"family": "apk.popr-d30",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "uses encryption of strings for transmitting encrypted infos about the device but none of the strings of the APK are encrypted",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.pornhub",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted strings",
+		"DD.static method"
+	],
+	"deobfuscations": [
+	603,
+	23
+],
+	"deobfuscation routine": [
+		"Lcom/apptracker/android/a;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/somepackage/llibs/a/d;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/module/a;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/c/b;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/c/d;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/c/e;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/advert/a;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/re/c;->a(Ljava/lang/String;)Ljava/lang/String; and Lcom/apptracker/android/c/c;->d(Ljava/lang/String;)Ljava/lang/String;",
+		"Lcom/google/android/gms/internal/ak;->b([BLjava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.premier_rat",
+"alt_names": "",
+"sample_hashes": [
+    "client/b55ac702ef2733831d5f551433b587afdecde37a8fca9a5d48c0cd6bbb0650bf_unpacked",
+    "server/ad1607c23b6f3f3ba380d770b33d08ccfcd6f7c260d482022ac9679562e9dd0a_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ "ad1607c23b6f3f3ba380d770b33d08ccfcd6f7c260d482022ac9679562e9dd0a_unpacked (1)"
+],
+	"deobfuscation routine": [
+		"Lcom/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.raxir",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.string encryption"
+	],
+	"deobfuscations": [
+ 507,
+ 494
+],
+	"deobfuscation routine": [
+		"Lcom/google/gson/Gson;->concat(Ljava/lang/String;I)Ljava/lang/String;",
+		"Lcom/package/li;->valueOf(ILjava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.redalert2",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.retefe",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "the ressource is in all samples the same and works like String k1 = getRawData(R.raw.blfs, 0, ctx); parseXml(new Blowfish(k1, PduPart.P_BASE64, \"12345678\").decrypt(getRawData(R.raw.config, 1, ctx)), ctx);",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.ressource",
+		"SR.ressource",
+		"SR.ressource",
+		"SR.ressource",
+		"SR.ressource"
+	],
+	"deobfuscations": [
+ "retefe_2014-06-23.apk (2)",
+ "retefe_2014-09-12.apk (2)",
+ "retefe_2014-11-10.apk (2)",
+ "retefe_2015-01-29.apk (2)",
+ "retefe_2015-05-13.apk (2)"
+],
+	"deobfuscation routine": [
+		"Lorg/thoughtcrime/securesms/xlibs/myFunctions;->getFirst(Landroid/content/Context;)V",
+		"Lorg/thoughtcrime/securesms/xlibs/myFunctions;->getFirst(Landroid/content/Context;)V",
+		"Lorg/thoughtcrime/securesms/xlibs/myFunctions;->getFirst(Landroid/content/Context;)V",
+		"Lorg/thoughtcrime/securesms/xlibs/myFunctions;->getFirst(Landroid/content/Context;)V",
+		"Lorg/thoughtcrime/securesms/h/i;->b(Landroid/content/Context;)V and Lorg/thoughtcrime/securesms/h/c;->c(Landroid/content/Context;)V"
+
+	]
+	}
+},
+{
+"family": "apk.riltok",
+"alt_names": "",
+"sample_hashes": [
+    "6e995d68c724f121d43ec2ff59bc4e536192360afa3beaec5646f01094f0b745"
+],
+"notes": "although some strings are retrieved by native calls, they are not encrypted or encoded at all",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.roaming_mantis",
+"alt_names": "",
+"sample_hashes": [
+    "0f49416b6bcb6e755d999255fabb4c77c5ea7dedeb7e6cdb0925c4f23c1fb00e",
+    "c65318aa58c9091b938948b62c4b5d6e47237697d8d2f96863f99ef177b6818d"
+],
+"notes": "we didn't had a look at the base64 encoded payload",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.rootnik",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "the dropper of this family doesn't contain any string encryption, but its packet payload does",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.sauron_locker",
+"alt_names": "",
+"sample_hashes": [
+    "a145ca02d3d0a0846a6dde235db9520d97efa65f7215e7cc134e6fcaf7a10ca8"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.skygofree",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "actually here we have a look at the reborn.apk",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.static class"
+	],
+	"deobfuscations": [
+ 302
+],
+	"deobfuscation routine": [
+		"Lcom/google/android/gms/common/zzc; as the static class and Lcom/google/android/gms/common/zzc$zza;->zzbO(Ljava/lang/String;)[B as the decryption routine"
+	]
+	}
+},
+{
+"family": "apk.slempo",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.string encryption"
+	],
+	"deobfuscations": [
+ 46
+],
+	"deobfuscation routine": [
+		"Lcom/nyrihin/sevoar/caxzyldxso;->yajezw([B)[B"
+	]
+	}
+},
+{
+"family": "apk.slocker",
+"alt_names": "",
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.string encryption"
+	],
+	"deobfuscations": [
+ 11
+],
+	"deobfuscation routine": [
+		"Lcom/android/tencent/zdevs/bah/sss;->l(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.smsspy",
+"alt_names": "",
+"notes": "the encrypted strings are capseld inside the class Lcom/phone/stop/db;",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 5
+],
+	"deobfuscation routine": [
+		"Lcom/phone/stop/c/f/a;->(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.spybanker",
+"alt_names": "",
+"notes": "the static class decryption could also be seen as an DD.encrypted string...",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.static method",
+		"SR.static class"
+	],
+	"deobfuscations": [
+ 39,
+ 4
+],
+	"deobfuscation routine": [
+		"Lcom/google/android/gms/d/et; stores the encrypted strings",
+		"strings are in Lcom/google/android/gms/common/l$d and decrypted by Lcom/google/android/gms/common/l$a;->a(Ljava/lang/String;)[B"
+	]
+	}
+},
+{
+"family": "apk.spynote",
+"alt_names": "",
+"sample_hashes": [
+    "9727b56953bb6622cc1d3a039e2ebf6ef260dd76c8dcc11f4a1320fbf294621d",
+    "d7bebfd87066e34d2f68ddf39d5637afa978df72bceb8dc690ed1553cdfffa43"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.stealthagent",
+"alt_names": "",
+"sample_hashes": [
+    "294b1766a376ffffd00666f1d539a70fdedf4fa256a01c3bd1b9cd795bd05f0e",
+    "b9be1d2edf044b3c06f42f001b2a26e833f92ca92773a78a09ee0037aff174a3"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.stealthmango",
+"alt_names": "",
+"sample_hashes": [
+    "9d87315c2ca93fe6d4e14b49e7826f2a2a9048c723deb3a40889b044821b006e"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.svpeng",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "their are much more strange looking strings, but they are used to obfuscate boolean values",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 8
+],
+	"deobfuscation routine": [
+		"Lyzl/nctvmzbwcbmjrzxpfibmjvptielpyasykfpprzz/rhiefdziwmvbmueyvbfcbbmehxbtzcutjjgmb/M;->a(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.switcher",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.talent_rat",
+"alt_names": "Assassin RAT",
+"sample_hashes": [
+    "a8c8460caea0abcc92c7dafde7508098d178a135c67e1e09bb5100a4fafa4027"
+],
+"notes": "it is just another opensource RAT for android; see also https://github.com/honglvt/TalentRAT",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.telerat",
+"alt_names": "",
+"sample_hashes": [
+    "01fef43c059d6b37be7faf47a08eccbf76cf7f050a7340ac2cae11942f27eb1d"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SE.base64"
+	],
+	"deobfuscations": [
+ 6
+],
+	"deobfuscation routine": [
+		"Base64 encoded strings are in the class Lcom/applisto/appcloner/classes/AbstractContentProvider$1; and in Lcom/applisto/appcloner/classes/DefaultProvider$MyActivity$1$1; --> they are all decoded by  Landroid/util/Base64;->decode(Ljava/lang/String;I)[B"
+	]
+	}
+},
+{
+"family": "apk.tempting_cedar",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string"
+	],
+	"deobfuscations": [
+ 428
+],
+	"deobfuscation routine": [
+		"Lcom/google/android/gms/common/zzc$zza;->zzcm(Ljava/lang/String;)[B"
+	]
+	}
+},
+{
+"family": "apk.tinyz",
+"alt_names": "",
+"sample_hashes": [
+    "ff11678d994eab7546559e52f039c3ec3db555e1e1861d2c93818927392e75d5",
+    "ca590d238ce18cf177a610ecbb98f20ba1d4b12947223feb69587b62597d6161",
+    "f64da907a636a5bd8e984b8df0a61180384cdc93095dc287304518d4ffdf6827"
+],
+"notes": "could also be seen as DD.encrypted string",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>"
+	],
+	"deobfuscations": [
+ "f64da907a636a5bd8e984b8df0a61180384cdc93095dc287304518d4ffdf6827 (66)"
+],
+	"deobfuscation routine": [
+		"Lcom/aliquavita/estabsurdum/b/a;-><clinit> is initializing the strings and invoking the decryption routine at Lcom/aliquavita/estabsurdum/b/a;->a(Ljava/lang/String;)Ljava/lang/String; "
+	]
+	}
+},
+{
+"family": "apk.titan",
+"alt_names": "",
+"sample_hashes": [
+    "664fc6fafd45cbfe9e43471dcd6fa4923aa206a1449d9ceda375deb952c5ed49",
+    "83923e12d6ac74a0f94d916c740487f146cd72e38e95f515d7b3b8cd6d26db11",
+    "e63e5f992e76c096b0c70565dfc06323c227a1a1a5d8597368a8298149fd624c"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.triada",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "here malpedia offers also the payload (the packed version of triada which has encrypted strings). The dropper itself doesn't contain any encrypted strings",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 93
+],
+	"deobfuscation routine": [
+		"Lcom/android/a/a;-><clinit> is initializing the strings and invoking the decryption routine at Lcom/android/a/b;->d([B)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.triout",
+"alt_names": "in total 34 encrypted strings",
+"sample_hashes": [
+    "f8d79fe3a7886223ef457c7de86dc90a09450a19b7185d8d09a50314316d49b2"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+        "SE.encoded bytes"
+	],
+	"deobfuscations": [
+ 18,
+ 16
+],
+	"deobfuscation routine": [
+		"Lcom/google/android/gms/internal/i;->b([BLjava/lang/String;)Ljava/lang/String;",
+        "all String of type public static final in the classes Lcom/startapp/android/publish/..."
+	]
+	}
+},
+{
+"family": "apk.unidentified_001",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.unidentified_002",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.vamp",
+"alt_names": "",
+"sample_hashes": [
+    "d909669b000c479b8bdd9f86fa62879a7c8b4dca8cde4f4a404862a4604c52e2_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.viper_rat",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "their is also a base64 encoded APK which looks maybe at first like encoded strings; the encrypted strings here are stores as bytes",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted strings"
+	],
+	"deobfuscations": [
+3
+],
+	"deobfuscation routine": [
+		"Lcom/android/downloads/a/a;->a([BII[BII)[B"
+	]
+	}
+},
+{
+"family": "apk.wirex",
+"alt_names": "",
+"sample_hashes": [
+    "d91e2bf391a69b0f5db7e99df8996dd7b8e3d5ffd2c80cac08f05a62f18acf8d"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		""
+	]
+	}
+},
+{
+"family": "apk.xbot",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.xloader",
+"alt_names": "",
+"sample_hashes": [
+    "bf0ad39d8a19b9bc385fb629e3227dec4012e1f5a316e8a30c932202624e8e0e"
+],
+"notes": "it seems that the packed payload consist of encrypted strings, but the dropper doesn't contain string encryption",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.xrat",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.yellyouth",
+"alt_names": "",
+"sample_hashes": [
+    "47297df03fa7c5984b752f0b154072741daed9d69909aa591c2cb8eeca8660f8_unpacked",
+    "ed3252964cfa53f5dcea8e59b623f34e171671c2ae02856e11e8d46a416182b6_unpacked"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.ressources"
+	],
+	"deobfuscations": [
+ "47297df03fa7c5984b752f0b154072741daed9d69909aa591c2cb8eeca8660f8_unpacked (19)"
+],
+	"deobfuscation routine": [
+		"inside the asset folder is the JAR-archive g10.jar invoking the class Lcom/android/jty/zzp/kkcf/config/c;->a(Landroid/content/Context;)V this method loads from the asset folder the scenery_pic.png which is then decrypted by the method Lcom/android/jty/zzp/kkcf/utils/y;->(Ljava/lang/String;)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.zen",
+"alt_names": "",
+"sample_hashes": [
+    "eb12cd65589cbc6f9d3563576c304273cb6a78072b0c20a155a0951370476d8d"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": false,
+	"type": [
+		"no"
+	],
+	"deobfuscations": [
+ 0
+],
+	"deobfuscation routine": [
+		"none"
+	]
+	}
+},
+{
+"family": "apk.zoopark",
+"alt_names": "",
+"sample_hashes": [
+    "v1/0601fc10951b780efb7da41b25f1e41fdb347374e81858cc894e8d8fd2106b7b",
+    "v2/d7da061b55d24a54988a3fca60009da907d14c2bcd32f2e53ef13bd8085b96cc",
+    "v3/f7fe4e299599a60a4797f9a13468e366394dc2d86ab768f681a0876d8ff052e0",
+    "v4/309523ecd0c4bc5e337005e71666da3711d0cda519100d5d5aa019b22dc61cbd"
+],
+"notes": "",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"DD.encrypted string",
+        "DD.encrypted string"
+
+	],
+	"deobfuscations": [
+ "v4/309523ecd0c4bc5e337005e71666da3711d0cda519100d5d5aa019b22dc61cbd (10)",
+ "v4/309523ecd0c4bc5e337005e71666da3711d0cda519100d5d5aa019b22dc61cbd (5)"
+],
+	"deobfuscation routine": [
+		"Lcom/testunit/android/G;->byteToString([B)Ljava/lang/String;",
+        "Lcom/testunit/libs/B;->encodeToString([BI)Ljava/lang/String;"
+	]
+	}
+},
+{
+"family": "apk.ztorg",
+"alt_names": "",
+"sample_hashes": [
+    "todo"
+],
+"notes": "the families consist of at least three stages which are stored in malpedia as different samples. Each of them used string encryption. The string encryption inside the dropper is more related to string encoding.",
+"state": "finished",
+"analyzed": true,
+"string encryption": {
+	"is": true,
+	"type": [
+		"SR.<clinit>",
+		"DD.string encryption",
+		"DD.string encryption"
+	],
+	"deobfuscations": [
+  "ztorg.apk (10)",
+"ztorg downloader.apk (368)",
+"ztorg payload.apk (81)"
+],
+	"deobfuscation routine": [
+		"Lorg/a/a/e;-><clinit> (6) Lorg/a/a/b;-><clinit> (2) and Lorg/a/a/k;-><clinit> (2)",
+		"La/b/c;->a([B)Ljava/lang/String;",
+		"La/a/p;->a([B)Ljava/lang/String;"
+	]
+	}
+}
+]
