@@ -216,21 +216,15 @@
 "string encryption": {
     "is": true,
     "type": [
-        "DD.encrypted string",
         "SE.decoding",
-        "DD.encrypted string",
         "SE.decoding"
     ],
     "deobfuscations": [
-       "5395936963df4d72b365fd30ab52a00a88f8a5f75336ba84ac8a9fc369e0f811 (1)",
        "5395936963df4d72b365fd30ab52a00a88f8a5f75336ba84ac8a9fc369e0f811 (11)",
-       "b64123e4ff92cd7be104b21ca0deaefd89e8270572746c61efc3e7cd05999b5d (1)",
        "b64123e4ff92cd7be104b21ca0deaefd89e8270572746c61efc3e7cd05999b5d (11)"
     ],
     "deobfuscation routine": [
-        "La/b;->a([B[B)Ljava/lang/String;",
         "Lcom/vera/i;->a(Ljava/lang/String;)Ljava/lang/String;",
-        "La/b;->a([B[B)Ljava/lang/String;",
         "Lcom/hidev/i;->a(Ljava/lang/String;)Ljava/lang/String; "
     ]
     }
@@ -266,7 +260,7 @@
     "5519c08852d2678ce16575ab6a47d4e0d4cb314f69603648d241171a670d6cc0"
 ],
 "alt_names": "",
-"notes": "multi samples (noch die location the clinit festhalten)",
+"notes": "multi samples",
 "state": "pending",
 "analyzed": true,
 "string encryption": {
@@ -284,10 +278,10 @@
 		"5519c08852d2678ce16575ab6a47d4e0d4cb314f69603648d241171a670d6cc0 catelites 2018 01 19.apk (66)"
 	],
 	"deobfuscation routine": [
-		"none",
-		"none",
-		"none",
-		"none"
+		"Lcom/atcbesal/ecbrsi/wimzm;->hjystfeio([B)[B as well as Lcom/atcbesal/ecbrsi/wimzm;->hjystfeio(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+		"Lcom/ryorilon/insqcear/eonbs;->ilmek([B)[B as well as Lcom/ryorilon/insqcear/eonbs;->ilmek(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+		"Lcom/gclnia/rtatabno/ovuktoyv;->qgbrmv([B)[B as well as Lcom/gclnia/rtatabno/ovuktoyv;->qgbrmv(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+		"Lcom/cefefks/esgeis/IDeqUTu;->suRgRzE([B)[B as well as Lcom/cefefks/esgeis/IDeqUTu;->suRgRzE(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;"
 	]
 	}
 },
